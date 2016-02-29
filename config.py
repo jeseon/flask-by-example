@@ -7,6 +7,8 @@ class Config(object):
     DEVELOPMENT = False
     CSRF_ENABLED = True
     SECRET_KEY = 'secret'
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+    SQLALCHEMY_DATABASE_URI = 'postgres://melchi:1234@121.78.233.114:5432/dv_api'
 
 
 class ProductionConfig(Config):
@@ -34,4 +36,3 @@ def init_app(app):
         'development': DevelopmentConfig,
         'default': DevelopmentConfig
     }[os.getenv('FLASK_CONFIG') or 'default']())
-
