@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-from app import db
+from example import db
 from datetime import datetime
 
 
