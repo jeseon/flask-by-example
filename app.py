@@ -1,9 +1,10 @@
 from flask import Flask
 import os
+import config
+
 
 app = Flask(__name__)
-app.config.from_object(os.environ['APP_SETTING'] or 'config.DevelopmentConfig')
-
+config.init_app(app)
 
 @app.route('/')
 def hello():
