@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# coding: utf-8
 from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
 import os
@@ -8,7 +10,7 @@ app = Flask(__name__)
 config.init_app(app)
 db = SQLAlchemy(app)
 
-from models import *
+from models import CeoNotice
 
 @app.route('/')
 def hello():
