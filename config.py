@@ -10,7 +10,7 @@ class Config(object):
     CSRF_ENABLED = True
     SECRET_KEY = 'secret'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    SQLALCHEMY_DATABASE_URI = 'postgres://melchi:1234@121.78.233.114:5432/dv_api'
+    SQLALCHEMY_DATABASE_URI = 'postgres://kaakwkmk:14IjRuvtWeGLoqnf4MoHl294gklFLZJe@pellefant.db.elephantsql.com:5432/kaakwkmk'
 
 
 class ProductionConfig(Config):
