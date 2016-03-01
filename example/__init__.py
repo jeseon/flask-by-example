@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 from flask import Flask
-from example.admin import admin
 from example.models import db
+from example.admin import admin
 import config
 import os
 
