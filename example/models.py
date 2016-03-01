@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
-from example import db
 from datetime import datetime
+from flask.ext.sqlalchemy import SQLAlchemy
 
+db = SQLAlchemy()
 
 class CeoNotice(db.Model):
     __tablename__ = 'notices'
