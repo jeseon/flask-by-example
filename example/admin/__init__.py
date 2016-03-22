@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-from flask.ext.admin import Admin
+from flask_admin import Admin
 from example.models import db, CeoNotice
 from example.admin.views import CeoNoticeView
 

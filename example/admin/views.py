@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-from flask.ext.admin.contrib.sqla import ModelView
+from flask_admin.contrib.sqla import ModelView
 
 
 class CeoNoticeView(ModelView):
